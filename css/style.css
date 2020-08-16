@@ -1,0 +1,51 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#button{
+  display: none;
+}
+
+#button:checked ~ .container-link{
+  transform: translateX(350px);
+}
+
+label{
+  padding: 15px;
+  position: absolute;
+  z-index: 1;
+}
+
+img{
+  width: 40px;
+}
+
+.container-link{
+  background: rgba(16, 16, 16, .5);
+  width: 350px;
+  height: 100%;
+  left: -350px;
+  position: absolute;
+  transition: all 0.5s;
+}
+
+.container-link ul{
+  list-style: none;
+  top: 70px;
+  position: absolute;
+  width: 100%;
+}
+
+.container-link a{
+  font-family: sans-serif;
+  text-decoration: none;
+  display: block;
+  padding: 20px 5px;
+  color: white;
+}
+
+.container-link a:hover{
+  background: rgb(176, 224, 230);
+  color: black;
+}
